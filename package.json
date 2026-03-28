@@ -2,8 +2,11 @@
   "name": "billx-monorepo",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "billx-pos"
+  ],
   "scripts": {
-    "build": "cd billx-pos && npm run build",
-    "install": "cd billx-pos && npm install"
+    "build": "npm run build --prefix billx-pos",
+    "install": "npm install --prefix billx-pos"
   }
 }
