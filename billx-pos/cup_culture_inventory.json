@@ -1,0 +1,1834 @@
+{
+  "categories": [
+    {
+      "id": "9d6806e1-7483-4977-bf47-4303600a04db",
+      "name": "SPILL THE TEA",
+      "items": [
+        {
+          "id": "1a42cb7a-2e0f-4bf2-a5bd-81661af0d355",
+          "name": "Tea",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.482Z"
+        },
+        {
+          "id": "90952a8e-8c1c-463e-811e-2f70cee55c21",
+          "name": "Black Tea",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "afd78ce9-41d1-4867-b587-152343e5817a",
+          "name": "Jaggery Tea",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f1d3b9f2-f4a8-4681-acc3-18b49ebb8cdc",
+          "name": "Green Tea",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "74288d16-4cb9-4866-a00f-eae5b47659b2",
+          "name": "Ginger Tea",
+          "price": 20,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "d4665a08-2919-413e-b524-57cd2f764a7f",
+          "name": "Lemon Tea",
+          "price": 20,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "33ba9f93-3581-44a2-b147-0024fcd76958",
+          "name": "Honey Lemon Tea",
+          "price": 20,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "68f11105-31b3-4629-aa28-934a1f8ef056",
+          "name": "Elaichi Tea",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "c4bcb269-a415-418e-9ed6-054cc2e84818",
+          "name": "Masala Tea",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "9971f95b-8f24-464d-bff2-1f825256129f",
+          "name": "Chocolate Tea",
+          "price": 45,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "cfc39de2-6862-4336-aee2-2a394f136ee8",
+          "name": "Ice Tea",
+          "price": 55,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "9d6806e1-7483-4977-bf47-4303600a04db",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "spill the tea",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "93805573-ba6d-4ecc-8832-5ad8910f90be",
+      "name": "COFFEE BUZZ",
+      "items": [
+        {
+          "id": "4949204c-186c-4525-9a8f-78f2dc495712",
+          "name": "Filter Coffee",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "93805573-ba6d-4ecc-8832-5ad8910f90be",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "coffee buzz",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "8ca3d7d2-4e80-46d2-b628-bd9f08e06349",
+          "name": "Jaggery Coffee",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "93805573-ba6d-4ecc-8832-5ad8910f90be",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "coffee buzz",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "54ba78e4-2090-4e3b-a77f-d33de7f839af",
+          "name": "Black Coffee",
+          "price": 20,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "93805573-ba6d-4ecc-8832-5ad8910f90be",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "coffee buzz",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+      "name": "HOT BEVERAGES",
+      "items": [
+        {
+          "id": "250a7bd5-c305-4d2c-a257-0fd86ad413d1",
+          "name": "Plain Milk",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "hot beverages",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "6c17068f-d107-47d6-8a29-361ac7fe1f5e",
+          "name": "Hot Badam",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "hot beverages",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "10dd2624-3ce1-4a6e-bc30-5f1893be8c62",
+          "name": "Horlicks",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "hot beverages",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "2e2d242d-ab1e-4ac5-bc65-692733abf6ae",
+          "name": "Boost",
+          "price": 25,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "hot beverages",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "a5302743-83ea-43f5-bc4d-113c4b0a8b2e",
+          "name": "Hot Milo",
+          "price": 30,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "hot beverages",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "b769d339-1a65-487d-9bd6-250abf295b8c",
+          "name": "Palkova Milk",
+          "price": 30,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "hot beverages",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "22176a19-3ad1-439e-92dd-d053f464e2e9",
+          "name": "Hot Chocolate",
+          "price": 30,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "8bd4c4f6-5cb3-4724-97c0-2d7a759dd917",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "hot beverages",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+      "name": "QUICK BITES",
+      "items": [
+        {
+          "id": "1039a1f3-ebcf-4e6c-b8d4-3697e76d415c",
+          "name": "Bread Omelette",
+          "price": 40,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "quick bites",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "eb0232f6-b2d0-4567-a694-96dc3f8de1ff",
+          "name": "Cheese Bread Omelette",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "quick bites",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "d0bd69a3-5659-443f-8782-0867af7c2a4d",
+          "name": "Aloo Tikki Chaat",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "quick bites",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "95335b07-a2e7-48e0-9c4d-8afa51455f7b",
+          "name": "Cheese Corn Nuggets",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "quick bites",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "9451f029-7ebd-49b5-9b43-7828ceb59af5",
+          "name": "Crispy Corn",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "quick bites",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f15d78af-b85d-4614-a4e7-878a1f432e73",
+          "name": "Popcorn Chicken",
+          "price": 89,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "quick bites",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "285318dd-21a2-4559-8649-9705ec6e4094",
+          "name": "Chicken Nuggets",
+          "price": 89,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "quick bites",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "1624f56e-5246-4d0c-9b74-d66f0f44a54b",
+          "name": "Lays Pkt",
+          "price": 15,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "2dc8f71c-e238-4932-89dd-17d7e7dec9d4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "quick bites",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "7ce25cbb-44ba-459e-b676-62725dc59f3e",
+      "name": "HEALTHY BITES",
+      "items": [
+        {
+          "id": "e47a9873-6656-4bb1-b457-0e8aa76eb602",
+          "name": "Butter Corn",
+          "price": 40,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "7ce25cbb-44ba-459e-b676-62725dc59f3e",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "healthy bites",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "0182f5e2-c4f1-4614-a631-9c08d364844c",
+          "name": "Boiled Egg Salad",
+          "price": 70,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "7ce25cbb-44ba-459e-b676-62725dc59f3e",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "healthy bites",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+      "name": "BUN BASH",
+      "items": [
+        {
+          "id": "fdf035dc-823c-46d9-bffa-0a07b02bcb49",
+          "name": "Butter Jam Bun",
+          "price": 30,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "bun bash",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "ba2faf35-3905-4ba6-8f09-3b95ef806be0",
+          "name": "Butter Bun",
+          "price": 30,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "bun bash",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "3c0d1a24-a124-449a-b448-4cdccd42a84f",
+          "name": "Paalkova Bun",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "bun bash",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "93dc5096-a9f1-47f9-b713-526cd6eb117c",
+          "name": "Nutella Bun",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "bun bash",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "4eee664b-c870-4998-b555-f1f819ec3c3b",
+          "name": "Biscoff Bun",
+          "price": 60,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "1b94b6ec-dbdb-46fb-9a7d-5dcf126389c0",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "bun bash",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+      "name": "SANDWICH",
+      "items": [
+        {
+          "id": "6cfdfd3e-c60f-4140-820b-07998ad86fe5",
+          "name": "Bread Butter Jam",
+          "price": 39,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sandwich",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "3f931fb2-492b-485e-b07e-adbff5ad8344",
+          "name": "Veg Sandwich",
+          "price": 59,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sandwich",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "3ebbb143-e2d7-4c40-a6fe-660b7a38eaf8",
+          "name": "Paneer Sandwich",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sandwich",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "2f9eadbb-302e-4969-af3b-0d5ebd30c4f0",
+          "name": "Corn Peri Peri Sandwich",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sandwich",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "53ad910a-b447-4f6f-ba87-db33d61be2c6",
+          "name": "Egg Bhurji Sandwich",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "sandwich",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f0d3adc9-763a-40df-947b-5de1692c4221",
+          "name": "Chicken Sandwich",
+          "price": 89,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d33f7019-b6b2-45a8-8175-2560cd9651a6",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "sandwich",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+      "name": "BURGER MANIA",
+      "items": [
+        {
+          "id": "9a51f9b5-f44f-4cfa-a4a4-181352255a21",
+          "name": "Aloo Tikki Burger",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "burger mania",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "fb35d88f-7c75-4cf8-8bff-a8f06ec650ed",
+          "name": "Veg Burger",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "burger mania",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "d688478c-de4a-4e8c-9cd5-25931e8de2dd",
+          "name": "CC Veg Burger",
+          "price": 89,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "burger mania",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "bbdaa060-4d7d-4d96-aba0-2b566098bd45",
+          "name": "Chicken Burger",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "burger mania",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "cbe0b785-5c53-45bf-b4e7-6450409d1b37",
+          "name": "CC Chicken Burger",
+          "price": 109,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "11f086d8-f675-4cc2-8880-462e4a5c9ab4",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "burger mania",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "a440378e-302c-4354-a017-35bd9031f5b2",
+      "name": "FRIES CRAZE",
+      "items": [
+        {
+          "id": "bcf70dd8-2bca-48de-addd-dd379d07b3d7",
+          "name": "Plain Fries",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "fries craze",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "5635e71e-821f-489e-956d-20b09ab11fbc",
+          "name": "Peri Peri Fries",
+          "price": 60,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "fries craze",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "a813d3da-46aa-400c-b1cf-ce7825701990",
+          "name": "Mexican Fries",
+          "price": 70,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "fries craze",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "9307c148-b8af-41c8-9cf5-514d011f9eeb",
+          "name": "Cheese Peri Peri Fries",
+          "price": 80,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "fries craze",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "0702f713-4423-47ca-9c2a-66fb7099f630",
+          "name": "Veg Loaded Fries",
+          "price": 90,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "fries craze",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "80c75a66-bd05-45c8-8e4c-e34d82bcc62e",
+          "name": "Chicken Loaded Fries",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "a440378e-302c-4354-a017-35bd9031f5b2",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "fries craze",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "d028de06-0147-45ca-9ded-9828cedc755c",
+      "name": "MOMOS ZONE",
+      "items": [
+        {
+          "id": "e7351ff8-23a1-42cb-a07f-f2d982013ace",
+          "name": "Veg Momos",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d028de06-0147-45ca-9ded-9828cedc755c",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "momos zone",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "e95684f0-a656-41cc-960c-162a614c0903",
+          "name": "Paneer Momos",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d028de06-0147-45ca-9ded-9828cedc755c",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "momos zone",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "eb1ffc1f-3b3d-4983-a070-c3601438248b",
+          "name": "Corn Momos",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d028de06-0147-45ca-9ded-9828cedc755c",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "momos zone",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "cd7ce7d5-2265-422e-ae1d-eaebdc68a793",
+          "name": "Chicken Momos",
+          "price": 89,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d028de06-0147-45ca-9ded-9828cedc755c",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "momos zone",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "d8e53998-280b-4817-aaaa-4957de59450a",
+          "name": "Chicken Peri Peri Momos",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d028de06-0147-45ca-9ded-9828cedc755c",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "momos zone",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+      "name": "MAGGI",
+      "items": [
+        {
+          "id": "4da83200-f335-4ca2-a45f-30842cace672",
+          "name": "Veg Maggi",
+          "price": 40,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "maggi",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "749ea733-8997-403b-ae1c-3da12fba0079",
+          "name": "Peri Peri Maggi",
+          "price": 45,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "maggi",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "768afa8c-a0b7-465f-9caa-f6eb22738ffb",
+          "name": "Egg Maggi",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+          "image": null,
+          "is_available": true,
+          "type": "non-veg",
+          "tags": [
+            "maggi",
+            "non-veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f4e8d8e5-b635-408c-815f-6a78156ebc7a",
+          "name": "Fried Onion Peri Peri Maggi",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "maggi",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f3fd8289-d65f-416e-a529-6c29ce09f7ca",
+          "name": "Tandoori Maggi",
+          "price": 60,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "ac9044bf-b023-41cb-b164-0d7b89384715",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "maggi",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+      "name": "MOJITO HUB",
+      "items": [
+        {
+          "id": "71c36e3c-c175-444a-9186-a1396aa9b2d6",
+          "name": "Lime Mojito",
+          "price": 50,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f41ece2c-0706-4cdc-b924-344862ec080d",
+          "name": "Blue Lagoon Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "0cd46c9c-519b-4d75-acb0-ea9aad9e062a",
+          "name": "Bubble Gum Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "6d1d1669-2fe1-422a-831c-1908437fdc73",
+          "name": "Mint Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "e255133a-5513-486b-a1c3-77530bd0f585",
+          "name": "Green Virgin Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "6e862c52-9cce-493d-8036-6cca6266adda",
+          "name": "Watermelon Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "ac4bf086-317c-4bea-8c8e-83bd75b7729a",
+          "name": "Strawberry Mojito",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "18a2a1e4-d8e1-4199-8602-e87b160623ba",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "mojito hub",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+      "name": "MILKY MADNESS",
+      "items": [
+        {
+          "id": "c850db0e-389f-41f3-b302-0b4e5b947592",
+          "name": "Boost Milkshake",
+          "price": 49,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "07b7a1e7-7c7e-4b0c-a2c1-c35647f31057",
+          "name": "Horlicks Milkshake",
+          "price": 49,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "c77805df-c6fd-4bbf-97c5-e22934cd9fac",
+          "name": "Bournvita Milkshake",
+          "price": 59,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "2ef80cc2-5b3b-42e4-9dc3-d06ebb1eae9a",
+          "name": "Badam Milkshake",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "537524e7-41e1-4c7e-83ac-383dba31432d",
+          "name": "Mango Milkshake",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "944487bb-06ba-4daf-88a4-425641dfd939",
+          "name": "Rose Milk",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "f6a94cea-d09a-4a52-93ef-191c516ef695",
+          "name": "Black Currant Milkshake",
+          "price": 69,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "6a49171e-59ad-47fd-af13-54990971065c",
+          "name": "Chocolate Milkshake",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "2a04bd28-7d8c-492a-a3c3-ef6585fd056a",
+          "name": "Cold Coffee Milkshake",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "93de5802-00e6-416b-b7e9-2f059fbd4b1e",
+          "name": "KitKat Milkshake",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "eec75da9-708d-48ab-83d9-a765860b6ed4",
+          "name": "Oreo Milkshake",
+          "price": 79,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "d82be1a5-0b44-4808-9fbf-f10d80ac94e2",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "milky madness",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "57622012-2e3a-4770-bb41-6c79c1acb402",
+      "name": "SIGNATURE SHAKES",
+      "items": [
+        {
+          "id": "7cd6d59f-21b6-4dce-abb4-239224f472a3",
+          "name": "Hazelnut Cold Coffee",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "57622012-2e3a-4770-bb41-6c79c1acb402",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "signature shakes",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "a786715c-ef5f-4289-b1c9-3e7b3108d100",
+          "name": "Brownie Milkshake",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "57622012-2e3a-4770-bb41-6c79c1acb402",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "signature shakes",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "aaffc18c-8f12-44a4-a947-ee123d4dddbe",
+          "name": "Lotus Biscoff Milkshake",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "57622012-2e3a-4770-bb41-6c79c1acb402",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "signature shakes",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "b997f7c6-fa4f-4606-9f02-38de70f6129c",
+          "name": "Cold Milo Milkshake",
+          "price": 99,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "57622012-2e3a-4770-bb41-6c79c1acb402",
+          "image": null,
+          "is_available": true,
+          "type": "beverage",
+          "tags": [
+            "signature shakes",
+            "beverage"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    },
+    {
+      "id": "3697d101-b26b-4c9c-8cf0-e22c63eb4ee7",
+      "name": "SWEET TREATS",
+      "items": [
+        {
+          "id": "35894cb5-df4e-4fa7-a991-472778393b23",
+          "name": "Hot Brownie",
+          "price": 60,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "3697d101-b26b-4c9c-8cf0-e22c63eb4ee7",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sweet treats",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        },
+        {
+          "id": "b67229a6-c939-4825-a082-31157fc3a3d4",
+          "name": "Brownie with Ice Cream",
+          "price": 80,
+          "cost_price": null,
+          "stock": 100,
+          "low_stock_alert": 10,
+          "unit": "pcs",
+          "category_id": "3697d101-b26b-4c9c-8cf0-e22c63eb4ee7",
+          "image": null,
+          "is_available": true,
+          "type": "veg",
+          "tags": [
+            "sweet treats",
+            "veg"
+          ],
+          "variants": [],
+          "addons": [],
+          "created_at": "2026-03-27T18:21:08.483Z"
+        }
+      ]
+    }
+  ]
+}

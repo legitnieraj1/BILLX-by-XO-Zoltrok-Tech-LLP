@@ -1,0 +1,19 @@
+<!--
+  Add these lines INSIDE android/app/src/main/AndroidManifest.xml
+  BEFORE the <application> tag.
+  The setup.sh script does this automatically.
+-->
+
+<!-- Bluetooth (Android 11 and below) -->
+<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+
+<!-- Bluetooth (Android 12+) -->
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+    android:usesPermissionFlags="neverForLocation"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<!-- USB Host for USB thermal printers -->
+<uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+<uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
