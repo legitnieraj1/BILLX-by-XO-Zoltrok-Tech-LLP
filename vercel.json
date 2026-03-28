@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npm run build --prefix billx-pos",
-  "installCommand": "npm install --prefix billx-pos",
-  "outputDirectory": "billx-pos/.next"
-}
