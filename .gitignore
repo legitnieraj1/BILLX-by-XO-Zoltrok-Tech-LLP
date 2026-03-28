@@ -19,6 +19,13 @@ node_modules/
 out/
 build/
 
+# next-pwa
+**/public/sw.js
+**/public/workbox-*.js
+**/public/fallback-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+
 # IDE / Models
 .claude/
 .vscode/
