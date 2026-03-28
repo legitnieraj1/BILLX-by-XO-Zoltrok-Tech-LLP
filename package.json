@@ -10,6 +10,13 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
+    "@capacitor/core": "^6.2.1",
+    "@capacitor/android": "^6.2.1",
+    "@capacitor/ios": "^6.2.1",
+    "@capacitor/app": "^6.0.3",
+    "@capacitor/haptics": "^6.0.3",
+    "@capacitor/keyboard": "^6.0.4",
+    "@capacitor/status-bar": "^6.0.3",
     "@supabase/supabase-js": "^2.100.1",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
@@ -22,6 +29,7 @@
     "zustand": "^4.5.4"
   },
   "devDependencies": {
+    "@capacitor/cli": "^6.2.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
