@@ -28,6 +28,7 @@ export function QuickPicks() {
       <div className="flex gap-3 overflow-x-auto no-scrollbar md:grid md:grid-cols-3 md:gap-4">
         {filteredPicks.map((item, index) => (
             <div 
+              key={item.id}
               className={clsx(
                 "relative rounded-2xl overflow-hidden aspect-[4/3] bg-surface-container",
                 !item.isAvailable && "cursor-not-allowed group/sold"
@@ -40,7 +41,7 @@ export function QuickPicks() {
                   item.isAvailable ? "group-hover:scale-110" : "grayscale opacity-50 transition-none"
                 )}
                 alt={item.name}
-                src={item.primaryImageUrl || `https://loremflickr.com/200/200/${encodeURIComponent(item.name)},food/all`}
+                src={item.primaryImageUrl || `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80`}
               />
               {!item.isAvailable && (
                 <div className="absolute inset-0 z-10">

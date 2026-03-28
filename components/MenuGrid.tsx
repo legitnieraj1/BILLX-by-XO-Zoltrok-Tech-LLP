@@ -85,7 +85,7 @@ export function MenuGrid() {
                     item.isAvailable ? "group-hover:scale-105" : "grayscale opacity-50 scale-100"
                   )}
                   alt={item.name}
-                  src={item.primaryImageUrl || `https://loremflickr.com/200/200/${encodeURIComponent(item.name)},food/all`}
+                  src={item.primaryImageUrl || `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80`}
                 />
                 
                 {!item.isAvailable && (

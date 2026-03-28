@@ -3,6 +3,7 @@ import { SideNavRail } from "@/components/SideNavRail";
 import { TopNavBar } from "@/components/TopNavBar";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SyncBootstrap } from "@/components/SyncBootstrap";
+import { InstallPrompt } from "@/components/InstallPrompt";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     title: "billX POS",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/icon.png",
     apple: "/icon.png",
   },
 };
@@ -41,6 +42,7 @@ export default function RootLayout({
       </head>
       <body className="bg-surface text-on-surface overflow-hidden antialiased selection:bg-primary/20">
         <SyncBootstrap />
+        <InstallPrompt />
         <div className="flex h-screen w-screen overflow-hidden bg-surface">
           <SideNavRail />
           <main className="ml-0 md:ml-20 flex-1 flex flex-col h-screen overflow-hidden pb-16 md:pb-0">
