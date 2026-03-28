@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd billx-pos && npm run build",
+  "installCommand": "cd billx-pos && npm install",
+  "outputDirectory": "billx-pos/.next"
+}

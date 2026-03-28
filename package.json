@@ -1,0 +1,9 @@
+{
+  "name": "billx-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd billx-pos && npm run build",
+    "install": "cd billx-pos && npm install"
+  }
+}
