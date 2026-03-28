@@ -9,9 +9,9 @@ export default function AnalyticsDashboard() {
     paymentSplit: { upi: 42, card: 23, cash: 35 },
     digitalPercentage: 65,
     topItems: [
-        { name: "Artisanal Espresso Blend", sku: "ART-001", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBLhpNYw4cVZp0HdVaso_8lKUHUeYc26ZkDeMIeS5as2Sd79Dx00KmjpvaoLOBXRxe8nK7VvNfeOrhW7rjYp2BKeVFqPU3GmnKIjPCyndb4ignjFsTHLt4E9mFemc3QxEXAUHzZSbKio1_Z6OZ5H4uCOYAUGbpC_xbXkeKkPIsagc7hw4VdHK2loS4gBarQmrR7BBUlj2NupZzapSMhqSsaBnX8HqStoJDrvJgp7zGmObilHDFe7YxJ3nh3jqmKBpIBTKRLlockR9w", quantity: 342, revenue: 14200 },
-        { name: "Matcha Zen Special", sku: "MAT-082", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmnnJB5j971X_OpADKHFItsmwgUL0TsR6vwxZ1mt_NkzoUtA_w6ANut0cU0oglnpKlSumjC0YySfaV8fywr9w3t5dNLDUvktwgDPaRovYXdcVozK9Wg7daIsB7zEOPeuUVX9VSUI-6dvxsoC_yA4bgNAtJaExCDZFPlUdPFgZ2vsjuPe8YLbr06DsxvjsN-WZpWi4etcimuuysLqMFxgs3xYr93UuZNAas1S2iTVadFpVT4D83kD9Z3xKIoG6hiHEYCEpL_UkdOmg", quantity: 210, revenue: 9850 },
-        { name: "Buttery Croissant", sku: "BAK-011", image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBx0kIrugKxFoTW_KsdEb-knFC3p6dlFQerMmoHcZ1GDs8GIQmMQVENcDmKidcvOSnpessGnR7vYYzKhILsMUYYSJg3xZK8X0vEBTjdi_hPDqS1uPFu7Q1K8x1KtSWjimVSqRy05L3LnxDSf_74fBiYovBiSYfvlg1_A1eAEV6vcavSrJF8KZAWynhaHCA7PeHPzHiqsTmHevQ8BMQ8Xcu4yHwLFiSrmUGiVpT6BQLarCpw2FsO_XM5Omt3YuM3e_uOr_sgAnMJnkk", quantity: 188, revenue: 7420 }
+        { name: "Artisanal Espresso Blend", sku: "ART-001", image: "https://loremflickr.com/200/200/coffee,latte/all", quantity: 342, revenue: 14200 },
+        { name: "Matcha Zen Special", sku: "MAT-082", image: "https://loremflickr.com/200/200/matcha,tea/all", quantity: 210, revenue: 9850 },
+        { name: "Buttery Croissant", sku: "BAK-011", image: "https://loremflickr.com/200/200/croissant,pastry/all", quantity: 188, revenue: 7420 }
     ],
     inventoryInsights: [] as any[]
   });
