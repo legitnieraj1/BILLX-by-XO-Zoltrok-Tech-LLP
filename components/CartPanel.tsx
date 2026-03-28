@@ -59,7 +59,7 @@ export function CartPanel() {
                       fill
                       className="object-cover"
                       alt={item.product.name}
-                      src={item.product.primaryImageUrl || `https://loremflickr.com/200/200/${encodeURIComponent(item.product.name)},food/all`}
+                      src={item.product.primaryImageUrl || `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=80`}
                     />
                   </div>
                   <div className="flex-1 pt-1">
@@ -79,12 +79,7 @@ export function CartPanel() {
               </div>
 
               {/* Controls */}
-              <div className="flex items-center justify-between gap-3 bg-white p-2 rounded-2xl shadow-sm">
-                <div className="flex bg-surface-container-low rounded-xl p-1">
-                  <button className="px-3 py-1.5 text-xs font-black rounded-lg shadow-sm bg-white text-primary">S</button>
-                  <button className="px-3 py-1.5 text-xs font-bold text-on-surface-variant hover:text-on-surface">M</button>
-                  <button className="px-3 py-1.5 text-xs font-bold text-on-surface-variant hover:text-on-surface">L</button>
-                </div>
+              <div className="flex items-center justify-end gap-3 bg-white p-2 rounded-2xl shadow-sm">
                 <div className="flex items-center gap-4 bg-surface-container-lowest text-on-surface border border-surface-container-highest rounded-xl px-2 py-1 shadow-sm">
                   <button 
                     onClick={() => updateCartItemQuantity(item.id, item.quantity - 1)}
@@ -103,15 +98,7 @@ export function CartPanel() {
                 </div>
               </div>
 
-              {/* Modifiers (Mocked for Visuals based on HTML) */}
-              <div className="flex flex-wrap gap-2 pt-1 border-t border-surface-variant/50">
-                <button className="px-3 py-1.5 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-[10px] font-bold flex items-center gap-1.5 hover:bg-secondary-container/5 hover:border-secondary-container/30 transition-colors text-on-surface-variant">
-                  <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>water_drop</span> Almond Milk
-                </button>
-                <button className="px-3 py-1.5 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-[10px] font-bold flex items-center gap-1.5 hover:bg-secondary-container/5 hover:border-secondary-container/30 transition-colors text-on-surface-variant">
-                  <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>bolt</span> Extra Shot
-                </button>
-              </div>
+              {/* Modifiers removed as requested */}
             </div>
           ))
         )}
