@@ -69,20 +69,19 @@ export function MenuGrid() {
           filteredProducts.map((item, index) => (
             <div
               key={item.id}
-              className="bg-surface-container-lowest rounded-3xl p-4 flex flex-col gap-4 group transition-all duration-300 hover:shadow-ambient hover:-translate-y-1 animate-slide-in"
-              style={{ animationDelay: `${index * 50}ms` }}
+              className="bg-surface-container-lowest rounded-3xl p-4 flex flex-col gap-4 group transition-all duration-300 hover:shadow-ambient"
             >
               <div 
                 className={clsx(
-                  "relative rounded-2xl overflow-hidden aspect-square bg-surface-container animate-shimmer bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container",
+                  "relative rounded-2xl overflow-hidden aspect-square bg-surface-container",
                   !item.isAvailable && "cursor-not-allowed group/sold"
                 )}
               >
                 <Image
                   fill
                   className={clsx(
-                    "object-cover transition-transform duration-700",
-                    item.isAvailable ? "group-hover:scale-105" : "grayscale opacity-50 scale-100"
+                    "object-cover",
+                    !item.isAvailable && "grayscale opacity-50"
                   )}
                   alt={item.name}
                   src={item.primaryImageUrl || `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80`}

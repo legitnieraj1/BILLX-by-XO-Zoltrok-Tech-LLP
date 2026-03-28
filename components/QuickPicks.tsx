@@ -37,8 +37,8 @@ export function QuickPicks() {
               <Image
                 fill
                 className={clsx(
-                  "object-cover transition-transform duration-700",
-                  item.isAvailable ? "group-hover:scale-110" : "grayscale opacity-50 transition-none"
+                  "object-cover",
+                  !item.isAvailable && "grayscale opacity-50"
                 )}
                 alt={item.name}
                 src={item.primaryImageUrl || `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80`}
