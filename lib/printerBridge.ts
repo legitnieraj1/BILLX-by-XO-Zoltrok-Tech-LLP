@@ -59,13 +59,41 @@ function isNative(): boolean {
   return Capacitor.isNativePlatform();
 }
 
+// ─── Web Bluetooth State Variables ──────────────────────────────────
+let webBluetoothDevice: any = null;
+let webBluetoothCharacteristic: any = null;
+
 /**
  * Scan for available Bluetooth printers.
  */
 export async function scanPrinters(): Promise<PrinterDevice[]> {
   if (!isNative()) {
-    console.warn('[PrinterBridge] Not running on native platform — scan unavailable');
-    return [];
+    try {
+      const nav: any = navigator;
+      if (!nav.bluetooth) {
+        throw new Error("Web Bluetooth API not supported in this browser. Please use Chrome or Edge.");
+      }
+      const device = await nav.bluetooth.requestDevice({
+        acceptAllDevices: true,
+        optionalServices: [
+          '000018f0-0000-1000-8000-00805f9b34fb', // Standard Serial Port / Printer Service
+          'e7810a71-73ae-499d-8c15-faa9aef0c3f2'  // Typical alternate POS string
+        ]
+      });
+      // Store globally for connect() phase
+      webBluetoothDevice = device;
+      
+      return [{
+        id: device.id,
+        name: device.name || 'Web Bluetooth Printer',
+        address: device.id,
+        type: 'bluetooth',
+        paired: false
+      }];
+    } catch (err: any) {
+      console.warn('[PrinterBridge] Web Bluetooth Scan canceled or failed:', err);
+      return [];
+    }
   }
 
   const result = await BillxPrinter.scanBluetoothDevices();
@@ -77,8 +105,37 @@ export async function scanPrinters(): Promise<PrinterDevice[]> {
  */
 export async function connectBluetooth(deviceAddress: string): Promise<boolean> {
   if (!isNative()) {
-    console.warn('[PrinterBridge] Not running on native platform');
-    return false;
+    try {
+      if (!webBluetoothDevice) {
+        throw new Error("No device selected. Please scan first.");
+      }
+      
+      const server = await webBluetoothDevice.gatt.connect();
+      const services = await server.getPrimaryServices();
+
+      // Find the first writable characteristic
+      for (const service of services) {
+        const characteristics = await service.getCharacteristics();
+        for (const char of characteristics) {
+          if (char.properties.write || char.properties.writeWithoutResponse) {
+            webBluetoothCharacteristic = char;
+            
+            // Listen for disconnects
+            webBluetoothDevice.addEventListener('gattserverdisconnected', () => {
+              webBluetoothCharacteristic = null;
+              webBluetoothDevice = null;
+              console.log("[PrinterBridge] Web Bluetooth disconnected");
+            });
+            
+            return true;
+          }
+        }
+      }
+      throw new Error("Could not find a writable thermal printer characteristic.");
+    } catch (err: any) {
+      console.error('[PrinterBridge] Web Bluetooth Connect Error:', err);
+      return false;
+    }
   }
 
   const result = await BillxPrinter.connectBluetoothPrinter({ deviceAddress });
@@ -102,7 +159,14 @@ export async function connectUSB(): Promise<boolean> {
  * Disconnect the current printer.
  */
 export async function disconnectPrinter(): Promise<boolean> {
-  if (!isNative()) return true;
+  if (!isNative()) {
+    if (webBluetoothDevice?.gatt?.connected) {
+      webBluetoothDevice.gatt.disconnect();
+    }
+    webBluetoothDevice = null;
+    webBluetoothCharacteristic = null;
+    return true;
+  }
   const result = await BillxPrinter.disconnectPrinter();
   return result.success;
 }
@@ -112,9 +176,23 @@ export async function disconnectPrinter(): Promise<boolean> {
  */
 export async function printReceipt(base64Data: string): Promise<boolean> {
   if (!isNative()) {
-    console.warn('[PrinterBridge] Not running on native platform — printing to console');
-    console.log('[PrinterBridge] Receipt data (base64):', base64Data.substring(0, 100) + '...');
-    return true; // Simulate success in browser
+    if (!webBluetoothCharacteristic) throw new Error("Printer not connected via Web Bluetooth.");
+    
+    // Decode base64 to binary
+    const binaryString = atob(base64Data);
+    const bytes = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+       bytes[i] = binaryString.charCodeAt(i);
+    }
+    
+    // Chunking to prevent GATT overloading (max 256 bytes per packet is safe)
+    const CHUNK_SIZE = 256;
+    for (let i = 0; i < bytes.length; i += CHUNK_SIZE) {
+       await webBluetoothCharacteristic.writeValue(bytes.slice(i, i + CHUNK_SIZE));
+       // Small delay to allow printer buffer to catch up
+       await new Promise(resolve => setTimeout(resolve, 10));
+    }
+    return true;
   }
 
   const result = await BillxPrinter.printReceipt({ data: base64Data });
@@ -129,6 +207,14 @@ export async function printReceipt(base64Data: string): Promise<boolean> {
  */
 export async function getPrinterStatus(): Promise<PrinterStatusResult> {
   if (!isNative()) {
+    if (webBluetoothDevice && webBluetoothDevice.gatt?.connected) {
+      return { 
+        status: 'CONNECTED', 
+        deviceName: webBluetoothDevice.name || 'Web Bluetooth Printer', 
+        deviceAddress: webBluetoothDevice.id, 
+        type: 'bluetooth' 
+      };
+    }
     return {
       status: 'DISCONNECTED',
       deviceName: null,
@@ -161,8 +247,9 @@ export async function setDefaultPrinter(address: string, type: PrinterType): Pro
  */
 export async function testPrint(): Promise<boolean> {
   if (!isNative()) {
-    console.log('[PrinterBridge] Test print (browser mode)');
-    return true;
+    // Basic ESC/POS test receipt (Init + Text + Feed + Cut)
+    const testData = "\x1B\x40\n\n=== WEB BLUETOOTH TEST ===\n\nConnection Successful!\n\n\x1B\x64\x05\x1D\x56\x00";
+    return printReceipt(btoa(testData));
   }
 
   const result = await BillxPrinter.testPrint();
