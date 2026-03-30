@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { usePrinter } from "@/hooks/usePrinter";
 import { useReceiptStore } from "@/store/useReceiptStore";
+import { usePosStore } from "@/store/usePosStore";
 import clsx from "clsx";
 
 export default function SettingsPage() {
   const printer = usePrinter();
   const { template, updateTemplate, resetTemplate } = useReceiptStore();
-  const [activeTab, setActiveTab] = useState<'printer' | 'receipt'>('printer');
+  const [activeTab, setActiveTab] = useState<'general' | 'printer' | 'receipt'>('general');
 
   const statusColor = {
     CONNECTED: 'bg-emerald-500',
@@ -28,6 +29,7 @@ export default function SettingsPage() {
       <div className="px-8 mb-8">
         <div className="flex bg-surface-container-high rounded-full p-1 h-10 w-fit">
           {[
+            { id: 'general' as const, label: 'General', icon: 'tune' },
             { id: 'printer' as const, label: 'Printer', icon: 'print' },
             { id: 'receipt' as const, label: 'Receipt Template', icon: 'receipt_long' },
           ].map((tab) => (
@@ -49,7 +51,9 @@ export default function SettingsPage() {
       </div>
 
       <div className="px-8 space-y-6">
-        {activeTab === 'printer' ? (
+        {activeTab === 'general' ? (
+          <GeneralSettings />
+        ) : activeTab === 'printer' ? (
           <PrinterSettings printer={printer} />
         ) : (
           <ReceiptTemplateEditor
@@ -60,6 +64,39 @@ export default function SettingsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+// ─── General Settings Panel ─────────────────────────────────────────
+
+function GeneralSettings() {
+  const { globalTaxRate, setGlobalTaxRate } = usePosStore();
+
+  return (
+    <>
+      <div className="bg-surface-container-lowest rounded-2xl p-8 shadow-sm border border-outline-variant/10">
+        <div className="mb-6">
+          <h3 className="text-lg font-bold text-primary mb-1">Store Configuration</h3>
+          <p className="text-sm text-slate-500">Global billing and checkout variables.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <SettingsInput
+            label="GST Percentage (%)"
+            value={(globalTaxRate * 100).toString()}
+            onChange={(v) => {
+              // Allow raw input, parse later or only allow numbers
+              const val = parseFloat(v);
+              if (!isNaN(val)) {
+                setGlobalTaxRate(val / 100);
+              } else if (v === '') {
+                setGlobalTaxRate(0);
+              }
+            }}
+            placeholder="e.g. 5"
+          />
+        </div>
+      </div>
+    </>
   );
 }
 

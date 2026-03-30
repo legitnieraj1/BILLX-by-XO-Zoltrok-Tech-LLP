@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 
 export default function AnalyticsDashboard() {
   const [timeframe, setTimeframe] = useState('Today');
+  const [showCustomModal, setShowCustomModal] = useState(false);
+  const [customStart, setCustomStart] = useState('');
+  const [customEnd, setCustomEnd] = useState('');
   const [data, setData] = useState({
     kpis: { totalRevenue: 84230, totalOrders: 1142, avgOrderValue: 73.50, netSales: 79110 },
     paymentSplit: { upi: 42, card: 23, cash: 35 },
@@ -18,9 +21,10 @@ export default function AnalyticsDashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const rangeMap: Record<string, string> = { 'Today': 'today', 'Week': 'week', 'Month': 'month', 'Custom': 'today' };
+    const rangeMap: Record<string, string> = { 'Today': 'today', 'Week': 'week', 'Month': 'month' };
+    const queryRange = timeframe.startsWith('custom:') ? timeframe : (rangeMap[timeframe] || 'today');
     import('@/lib/api').then(({ fetchAnalyticsSummary }) => {
-      fetchAnalyticsSummary(rangeMap[timeframe] || 'today')
+      fetchAnalyticsSummary(queryRange)
         .then(json => {
           if (json.success) {
             setData((prev: any) => ({
@@ -50,9 +54,15 @@ export default function AnalyticsDashboard() {
             {['Today', 'Week', 'Month', 'Custom'].map(tf => (
               <button 
                 key={tf}
-                onClick={() => setTimeframe(tf)}
+                onClick={() => {
+                  if (tf === 'Custom') {
+                    setShowCustomModal(true);
+                  } else {
+                    setTimeframe(tf);
+                  }
+                }}
                 className={`px-4 py-1.5 text-xs rounded-full transition-colors flex items-center gap-1 ${
-                  timeframe === tf ? 'bg-white shadow-sm text-primary font-bold' : 'font-medium text-slate-500 hover:text-primary'
+                  (timeframe === tf || (tf === 'Custom' && timeframe.startsWith('custom:'))) ? 'bg-white shadow-sm text-primary font-bold' : 'font-medium text-slate-500 hover:text-primary'
                 }`}
               >
                 {tf} {tf === 'Custom' && <span className="material-symbols-outlined text-sm">calendar_today</span>}
@@ -264,6 +274,57 @@ export default function AnalyticsDashboard() {
           </div>
         )}
       </div>
+
+      {/* Custom Date Modal */}
+      {showCustomModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="bg-surface rounded-3xl p-8 shadow-2xl max-w-sm w-full animate-slide-in">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-xl font-bold text-primary">Custom Range</h3>
+              <button onClick={() => setShowCustomModal(false)} className="text-slate-400 hover:text-slate-600 transition-colors">
+                <span className="material-symbols-outlined border border-outline-variant/20 rounded-full p-1">close</span>
+              </button>
+            </div>
+            
+            <div className="space-y-5 mb-8">
+              <div>
+                <label className="text-[10px] font-black tracking-widest text-slate-500 uppercase block mb-2">Start Date</label>
+                <input 
+                  type="date" 
+                  max={customEnd || undefined}
+                  value={customStart}
+                  onChange={e => setCustomStart(e.target.value)}
+                  className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-2.5 text-sm font-bold text-primary focus:outline-none focus:border-primary/40 transition-colors" 
+                />
+              </div>
+              <div>
+                <label className="text-[10px] font-black tracking-widest text-slate-500 uppercase block mb-2">End Date</label>
+                <input 
+                  type="date"
+                  min={customStart || undefined}
+                  value={customEnd}
+                  onChange={e => setCustomEnd(e.target.value)}
+                  className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-2.5 text-sm font-bold text-primary focus:outline-none focus:border-primary/40 transition-colors" 
+                />
+              </div>
+            </div>
+
+            <button 
+              onClick={() => {
+                if (customStart && customEnd) {
+                  setTimeframe(`custom:${customStart},${customEnd}`);
+                  setShowCustomModal(false);
+                }
+              }}
+              disabled={!customStart || !customEnd}
+              className="w-full py-3.5 bg-primary text-white rounded-xl font-bold hover:bg-primary/95 shadow-sm active:scale-[0.98] disabled:opacity-50 disabled:bg-slate-300 transition-all flex justify-center items-center gap-2"
+            >
+              <span className="material-symbols-outlined text-sm">done</span>
+              Apply Filter
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -186,7 +186,7 @@ export function BillingSummary() {
             <span className="font-black">₹{(subtotal).toFixed(2)}</span>
           </div>
           <div className="flex justify-between text-sm font-semibold text-outline">
-            <span>Tax (GST 5%)</span>
+            <span>Tax (GST {bill.taxRate * 100}%)</span>
             <span className="font-black">₹{(tax).toFixed(2)}</span>
           </div>
           <div className="flex justify-between text-sm font-black text-secondary-container">

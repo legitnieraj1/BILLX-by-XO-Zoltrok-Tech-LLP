@@ -137,6 +137,17 @@ export async function fetchAnalyticsSummary(range = 'today') {
       const startOfWeek = new Date();
       startOfWeek.setDate(startOfWeek.getDate() - 7);
       query = query.gte('createdAt', startOfWeek.toISOString());
+    } else if (range === 'month') {
+      const startOfMonth = new Date();
+      startOfMonth.setMonth(startOfMonth.getMonth() - 1);
+      query = query.gte('createdAt', startOfMonth.toISOString());
+    } else if (range.startsWith('custom:')) {
+      const [startStr, endStr] = range.split(':')[1].split(',');
+      const startDate = new Date(startStr);
+      startDate.setHours(0, 0, 0, 0);
+      const endDate = new Date(endStr);
+      endDate.setHours(23, 59, 59, 999);
+      query = query.gte('createdAt', startDate.toISOString()).lte('createdAt', endDate.toISOString());
     }
 
     const { data: orders, count, error } = await query;

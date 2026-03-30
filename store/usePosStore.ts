@@ -14,6 +14,8 @@ interface PosState {
   setSearchQuery: (query: string) => void;
   
   // Terminal / Bill State
+  globalTaxRate: number;
+  setGlobalTaxRate: (rate: number) => void;
   bills: Bill[];
   activeBillId: string | null;
   addBill: () => void;
@@ -37,7 +39,7 @@ interface PosState {
 const generateId = () => Math.random().toString(36).substring(2, 9);
 const generateOrderNumber = () => Math.floor(1000 + Math.random() * 9000).toString();
 
-const createNewBill = (index: number, deterministicId?: string): Bill => ({
+const createNewBill = (index: number, deterministicId?: string, taxRate: number = 0.05): Bill => ({
   id: deterministicId || `bill-${Date.now()}-${generateId()}`,
   label: `Bill ${index + 1}`,
   orderNumber: deterministicId ? "1001" : generateOrderNumber(),
@@ -46,13 +48,13 @@ const createNewBill = (index: number, deterministicId?: string): Bill => ({
   items: [],
   paymentMethod: 'cash',
   discount: 0,
-  taxRate: 0.05, // 5% default
+  taxRate,
   status: 'pending',
   createdAt: new Date('2024-01-01'), // Deterministic date for initial state
 });
 
 export const usePosStore = create<PosState>((set, get) => {
-  const initialBill = createNewBill(0, 'default-bill-1');
+  const initialBill = createNewBill(0, 'default-bill-1', 0.05);
   
   return {
     sidebarOpen: true,
@@ -67,8 +69,14 @@ export const usePosStore = create<PosState>((set, get) => {
     bills: [initialBill],
     activeBillId: initialBill.id,
     
+    globalTaxRate: 0.05,
+    setGlobalTaxRate: (rate: number) => set((state) => ({
+      globalTaxRate: rate,
+      bills: state.bills.map((b) => b.status === 'pending' ? { ...b, taxRate: rate } : b)
+    })),
+    
     addBill: () => set((state) => {
-      const newBill = createNewBill(state.bills.length);
+      const newBill = createNewBill(state.bills.length, undefined, state.globalTaxRate);
       return {
         bills: [...state.bills, newBill],
         activeBillId: newBill.id,
