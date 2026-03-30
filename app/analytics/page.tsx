@@ -11,11 +11,7 @@ export default function AnalyticsDashboard() {
     kpis: { totalRevenue: 84230, totalOrders: 1142, avgOrderValue: 73.50, netSales: 79110 },
     paymentSplit: { upi: 42, card: 23, cash: 35 },
     digitalPercentage: 65,
-    topItems: [
-        { name: "Artisanal Espresso Blend", sku: "ART-001", image: "https://loremflickr.com/200/200/coffee,latte/all", quantity: 342, revenue: 14200 },
-        { name: "Matcha Zen Special", sku: "MAT-082", image: "https://loremflickr.com/200/200/matcha,tea/all", quantity: 210, revenue: 9850 },
-        { name: "Buttery Croissant", sku: "BAK-011", image: "https://loremflickr.com/200/200/croissant,pastry/all", quantity: 188, revenue: 7420 }
-    ],
+    topItems: [] as any[],
     inventoryInsights: [] as any[]
   });
   const [loading, setLoading] = useState(true);
@@ -34,7 +30,8 @@ export default function AnalyticsDashboard() {
                 totalRevenue: json.data?.totalRevenue || 0,
                 totalOrders: json.data?.orderCount || 0,
                 avgOrderValue: json.data?.averageOrderValue || 0,
-              }
+              },
+              topItems: json.data?.topItems || []
             }));
           }
           setLoading(false);

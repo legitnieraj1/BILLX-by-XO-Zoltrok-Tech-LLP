@@ -121,13 +121,13 @@ export async function fetchAnalyticsSummary(range = 'today') {
     return { success: false, data: { error: 'Offline', totalRevenue: 0, orderCount: 0 } };
   }
   
-  try {
-    const { supabase } = await import('./supabase');
-    let query = supabase
-      .from('orders')
-      .select('subtotal, total', { count: 'exact' })
-      .eq('businessId', BUSINESS_ID)
-      .eq('status', 'completed');
+    try {
+      const { supabase } = await import('./supabase');
+      let query = supabase
+        .from('orders')
+        .select('subtotal, total, items', { count: 'exact' })
+        .eq('businessId', BUSINESS_ID)
+        .eq('status', 'completed');
 
     if (range === 'today') {
       const startOfDay = new Date();
@@ -154,6 +154,54 @@ export async function fetchAnalyticsSummary(range = 'today') {
     if (error) throw error;
 
     const totalRevenue = orders.reduce((sum, o) => sum + Number(o.total), 0);
+    
+    // Aggregating Top Items
+    const itemMap = new Map<string, any>();
+    orders.forEach(order => {
+      if (order.items && Array.isArray(order.items)) {
+        order.items.forEach((item: any) => {
+          const key = item.productId || item.productName;
+          if (!key) return;
+          const existing = itemMap.get(key) || { 
+            productId: item.productId, 
+            name: item.productName || 'Unknown Item', 
+            quantity: 0, 
+            revenue: 0 
+          };
+          existing.quantity += Number(item.quantity) || 0;
+          existing.revenue += Number(item.price) || 0;
+          itemMap.set(key, existing);
+        });
+      }
+    });
+
+    const topItems = Array.from(itemMap.values())
+      .sort((a, b) => b.revenue - a.revenue)
+      .slice(0, 3);
+
+    if (topItems.length > 0) {
+      try {
+        const prodData = await supabase
+          .from('products')
+          .select('id, sku, primaryImageUrl')
+          .in('id', topItems.map(t => t.productId).filter(Boolean));
+        if (prodData.data) {
+          const pMap = new Map(prodData.data.map(p => [p.id, p]));
+          topItems.forEach(t => {
+            if (t.productId && pMap.has(t.productId)) {
+              const p = pMap.get(t.productId);
+              if (p) {
+                t.image = p.primaryImageUrl || "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=80";
+                t.sku = p.sku || "N/A";
+              }
+            } else {
+              t.image = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=80";
+              t.sku = t.sku || "N/A";
+            }
+          });
+        }
+      } catch(e) { console.warn("Could not fetch product details"); }
+    }
 
     return {
       success: true,
@@ -161,11 +209,12 @@ export async function fetchAnalyticsSummary(range = 'today') {
         totalRevenue: totalRevenue,
         orderCount: count,
         averageOrderValue: count && count > 0 ? totalRevenue / count : 0,
+        topItems
       }
     };
   } catch (error: any) {
     console.error('Analytics Fetch Error:', error);
-    return { success: false, data: { totalRevenue: 0, orderCount: 0 } };
+    return { success: false, data: { totalRevenue: 0, orderCount: 0, topItems: [] } };
   }
 }
 
